@@ -1,0 +1,15 @@
+[project]
+name = "ai-employee-bronze"
+version = "0.1.0"
+description = "Bronze tier Personal AI Employee with file system monitoring"
+requires-python = ">=3.13"
+dependencies = [
+    "watchdog>=4.0.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = []

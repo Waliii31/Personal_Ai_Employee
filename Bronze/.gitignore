@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+env/
+
+# UV
+.uv/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Obsidian
+.obsidian/
+.trash/
+
+# Credentials and secrets
+.env
+*.key
+*.pem
+credentials.json
+token.json
+
+# Temporary files
+*.tmp
+*.temp
+~*
+
+# MCP sessions
+.mcp/
+sessions/

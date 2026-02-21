@@ -1,0 +1,2 @@
+This is a test document for the AI Employee system.
+If you can see this in Needs_Action, the watcher is working!
