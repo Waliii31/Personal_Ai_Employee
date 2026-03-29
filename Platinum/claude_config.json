@@ -1,0 +1,65 @@
+{
+  "mcp": {
+    "servers": [
+      {
+        "name": "email-mcp",
+        "command": "node",
+        "args": ["mcp-servers/email-mcp/index.js"],
+        "env": {
+          "GMAIL_CREDENTIALS": "./vault/gmail_credentials.json"
+        }
+      },
+      {
+        "name": "browser-mcp",
+        "command": "npx",
+        "args": ["@anthropic/browser-mcp"],
+        "env": {
+          "HEADLESS": "true",
+          "BROWSER_TYPE": "chromium"
+        }
+      },
+      {
+        "name": "filesystem-mcp",
+        "command": "node",
+        "args": ["mcp-servers/filesystem-mcp/index.js"]
+      }
+    ]
+  },
+  "plugins": {
+    "enabled": [
+      "ralph-wiggum",
+      "auto-context",
+      "code-execution"
+    ],
+    "ralph-wiggum": {
+      "enabled": true,
+      "default_max_iterations": 10,
+      "default_delay": 5,
+      "completion_indicators": [
+        "<promise>TASK_COMPLETE</promise>",
+        "TASK_COMPLETED_SUCCESSFULLY"
+      ]
+    }
+  },
+  "security": {
+    "sandbox_enabled": true,
+    "command_restrictions": {
+      "dangerous_commands": [
+        "rm -rf",
+        "mv /",
+        "dd if=",
+        "chmod 777 /"
+      ]
+    }
+  },
+  "performance": {
+    "context_window": "auto",
+    "model_selection": {
+      "default": "claude-sonnet-4-6",
+      "fallback_models": [
+        "claude-opus-4-6",
+        "claude-haiku-4-5-20251001"
+      ]
+    }
+  }
+}

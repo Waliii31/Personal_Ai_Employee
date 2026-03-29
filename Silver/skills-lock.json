@@ -1,0 +1,22 @@
+{
+  "skills": [
+    {
+      "name": "process-vault-tasks",
+      "path": "./skills/process-vault-tasks/process_vault_tasks.py",
+      "description": "Process tasks from the AI Employee vault and create action plans",
+      "version": "1.0.0"
+    },
+    {
+      "name": "email-handler",
+      "path": "./skills/email-handler/email_handler.py",
+      "description": "Process emails and draft intelligent replies",
+      "version": "1.0.0"
+    },
+    {
+      "name": "linkedin-poster",
+      "path": "./skills/linkedin-poster/linkedin_poster.py",
+      "description": "Generate and schedule LinkedIn posts for business growth",
+      "version": "1.0.0"
+    }
+  ]
+}

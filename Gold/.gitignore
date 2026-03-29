@@ -1,0 +1,90 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Odoo
+odoo-integration/addons/*
+!odoo-integration/addons/.gitkeep
+
+# Vault - sensitive data
+vault/Accounting/*.json
+vault/Social_Media/.facebook_processed
+vault/Social_Media/.instagram_processed
+vault/Social_Media/.twitter_processed
+vault/Logs/audit/*.json
+vault/Logs/errors/*.json
+vault/Logs/loop_state/*.json
+vault/Briefings/*.md
+vault/Done/*.md
+vault/Approved/*.md
+vault/Rejected/*.md
+
+# Keep structure
+!vault/**/.gitkeep
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Credentials
+credentials.json
+token.json
+*_credentials.json
+*_token.json
+
+# Docker volumes
+odoo-integration/data/
+
+# Test files
+test_*.py
+*_test.py

@@ -1,0 +1,110 @@
+{
+  "vault_path": "D:/Personal_Ai_Employee/Gold/vault",
+  "watchers": [
+    {
+      "name": "gmail_watcher",
+      "type": "gmail",
+      "enabled": true,
+      "check_interval": 300,
+      "description": "Monitor Gmail for new emails"
+    },
+    {
+      "name": "whatsapp_watcher",
+      "type": "whatsapp",
+      "enabled": true,
+      "check_interval": 300,
+      "description": "Monitor WhatsApp for new messages"
+    },
+    {
+      "name": "facebook_watcher",
+      "type": "facebook",
+      "enabled": true,
+      "check_interval": 300,
+      "description": "Monitor Facebook page for comments and engagement"
+    },
+    {
+      "name": "instagram_watcher",
+      "type": "instagram",
+      "enabled": true,
+      "check_interval": 300,
+      "description": "Monitor Instagram for comments and engagement"
+    },
+    {
+      "name": "twitter_watcher",
+      "type": "twitter",
+      "enabled": true,
+      "check_interval": 300,
+      "description": "Monitor Twitter for mentions and engagement"
+    },
+    {
+      "name": "odoo_sync_watcher",
+      "type": "odoo_sync",
+      "enabled": true,
+      "check_interval": 3600,
+      "description": "Sync Odoo financial data to vault every hour"
+    },
+    {
+      "name": "briefing_scheduler",
+      "type": "briefing_scheduler",
+      "enabled": true,
+      "check_interval": 3600,
+      "description": "Generate weekly CEO briefing every Sunday at 11 PM"
+    },
+    {
+      "name": "approval_workflow",
+      "type": "approval_workflow",
+      "enabled": true,
+      "check_interval": 60,
+      "description": "Process approval requests and execute approved actions"
+    }
+  ],
+  "mcp_servers": {
+    "odoo": {
+      "command": "node",
+      "args": ["D:/Personal_Ai_Employee/Gold/mcp-servers/odoo-mcp/index.js"],
+      "description": "Odoo accounting integration"
+    },
+    "social_media": {
+      "command": "node",
+      "args": ["D:/Personal_Ai_Employee/Gold/mcp-servers/social-media-mcp/index.js"],
+      "description": "Multi-platform social media posting"
+    }
+  },
+  "agent_skills": {
+    "accounting_assistant": {
+      "path": "D:/Personal_Ai_Employee/Gold/skills/accounting-assistant/accounting_assistant.py",
+      "description": "Process financial tasks using Odoo"
+    },
+    "social_media_manager": {
+      "path": "D:/Personal_Ai_Employee/Gold/skills/social-media-manager/social_media_manager.py",
+      "description": "Manage multi-platform social media posting"
+    },
+    "business_auditor": {
+      "path": "D:/Personal_Ai_Employee/Gold/skills/business-auditor/business_auditor.py",
+      "description": "Generate CEO briefings and business analysis"
+    },
+    "task_orchestrator": {
+      "path": "D:/Personal_Ai_Employee/Gold/skills/task-orchestrator/task_orchestrator.py",
+      "description": "Manage Ralph Wiggum loop execution"
+    }
+  },
+  "ralph_wiggum": {
+    "enabled": true,
+    "max_iterations": 10,
+    "timeout_per_iteration": 300,
+    "completion_strategies": ["file_movement", "promise", "metadata"]
+  },
+  "error_recovery": {
+    "enabled": true,
+    "max_retry_attempts": 3,
+    "initial_delay": 1.0,
+    "backoff_factor": 2.0
+  },
+  "audit_logging": {
+    "enabled": true,
+    "retention_days": 90,
+    "log_mcp_calls": true,
+    "log_approvals": true,
+    "log_external_apis": true
+  }
+}

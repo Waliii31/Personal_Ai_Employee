@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "email": {
+      "command": "node",
+      "args": ["D:/Personal_Ai_Employee/Silver/mcp-servers/email-mcp/index.js"],
+      "env": {
+        "GMAIL_CREDENTIALS_PATH": "D:/Personal_Ai_Employee/Silver/credentials.json",
+        "GMAIL_TOKEN_PATH": "D:/Personal_Ai_Employee/Silver/token.json"
+      }
+    }
+  }
+}

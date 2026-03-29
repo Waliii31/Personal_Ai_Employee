@@ -1,0 +1,90 @@
+# Dependencies
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+.venv/
+env.bak/
+venv.bak/
+
+# Virtual environments
+.venv/
+.envrc
+.env.local
+.env.staging
+.env.production
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Icon?
+.dsb
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment variables
+.env
+.env.example
+
+# Secrets
+*.key
+*.pem
+*.crt
+*.cert
+secrets/
+tokens/
+keys/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Build outputs
+dist/
+build/
+*.egg-info/
+coverage/
+
+# Temporary files
+/tmp/
+temp/
+*.tmp
+*.temp
+
+# Vault sync exclusion (except markdown files)
+# Exclude everything in vault except .md files
+vault/*
+!vault/*.md
+!vault/**/*.md
+
+# But exclude sensitive vault files
+vault/.env
+vault/tokens/
+vault/secrets/
+vault/whatsapp_session/
+
+# Process IDs
+*.pid
+/tmp/

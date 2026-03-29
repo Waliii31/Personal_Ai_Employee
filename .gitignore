@@ -47,6 +47,23 @@ package-lock.json
 .obsidian/
 .trash/
 
+# Vault directories with personal data
+**/vault/Needs_Action/*.md
+**/vault/Inbox/*.txt
+**/vault/Logs/*.log
+**/AI_Employee_Vault/Logs/*.log
+**/AI_Employee_Vault/Inbox/*.txt
+**/AI_Employee_Vault/Done/*.md
+**/AI_Employee_Vault/Plans/*.md
+credentials.json
+token.json
+token.pickle
+
+# Keep folder structure but ignore content
+!**/vault/Needs_Action/.gitkeep
+!**/vault/Inbox/.gitkeep
+!**/vault/Logs/.gitkeep
+
 # Logs
 *.log
 logs/

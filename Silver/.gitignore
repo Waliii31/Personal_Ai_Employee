@@ -1,0 +1,46 @@
+# Security - Never commit these files
+credentials.json
+token.json
+token.pickle
+.env
+
+# WhatsApp session data
+whatsapp_session/
+.wwebjs_auth/
+
+# Node modules
+node_modules/
+package-lock.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Backup files
+*.backup
+crontab.backup
+
+# Test files
+test_*.txt
+sample_*.json

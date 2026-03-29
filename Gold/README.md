@@ -1,11 +1,15 @@
-# Gold Tier: Autonomous Employee
+# Gold Tier - Personal AI Employee
 
-**Estimated Time**: 40+ hours
-**Status**: ⏳ Planned
+**Autonomous Business Operations with Odoo, Social Media, and CEO Briefings**
 
 ## Overview
 
-The Gold Tier transforms my AI assistant into a fully autonomous employee capable of managing complex business operations, accounting integration, multi-platform social media, and generating comprehensive business insights.
+Gold Tier represents a major leap to full business automation with:
+- **Odoo accounting integration** for financial management
+- **Multi-platform social media** (Facebook, Instagram, Twitter/X)
+- **Weekly CEO Briefing** with financial analysis and proactive suggestions
+- **Ralph Wiggum loop** for autonomous multi-step task completion
+- **Comprehensive error recovery** and audit logging
 
 ## Prerequisites
 

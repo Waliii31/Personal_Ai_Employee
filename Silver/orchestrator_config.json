@@ -1,0 +1,27 @@
+{
+  "watchers": {
+    "gmail": {
+      "enabled": true,
+      "script": "./watchers/gmail_watcher.py",
+      "check_interval": 120
+    },
+    "whatsapp": {
+      "enabled": true,
+      "script": "./watchers/whatsapp_watcher.py",
+      "check_interval": 60
+    },
+    "approval": {
+      "enabled": true,
+      "script": "./watchers/approval_workflow.py",
+      "check_interval": 10
+    }
+  },
+  "automation": {
+    "linkedin": {
+      "enabled": true,
+      "script": "./watchers/linkedin_automation.py",
+      "schedule": "daily"
+    }
+  },
+  "vault_path": "vault"
+}

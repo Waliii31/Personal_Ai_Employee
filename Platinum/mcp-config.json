@@ -1,0 +1,25 @@
+{
+  "servers": [
+    {
+      "name": "email",
+      "command": "node",
+      "args": ["/path/to/email-mcp/index.js"],
+      "env": {
+        "GMAIL_CREDENTIALS": "/path/to/credentials.json"
+      }
+    },
+    {
+      "name": "browser",
+      "command": "npx",
+      "args": ["@anthropic/browser-mcp"],
+      "env": {
+        "HEADLESS": "true"
+      }
+    },
+    {
+      "name": "filesystem",
+      "command": "node",
+      "args": ["/path/to/filesystem-mcp/index.js"]
+    }
+  ]
+}
